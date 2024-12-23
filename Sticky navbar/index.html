@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Navbar</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            padding: 10px 20px;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            display: inline-block;
+        }
+
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 4px;
+        }
+
+        .content {
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .section {
+            height: 600px;
+            padding: 20px;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #f4f4f4;
+        }
+
+        .section:nth-child(even) {
+            background-color: #e4e4e4;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#section1">Home</a>
+        <a href="#section2">About</a>
+        <a href="#section3">Services</a>
+        <a href="#section4">Contact</a>
+    </div>
+
+    <div class="content">
+        <div id="section1" class="section">Home Section Content</div>
+        <div id="section2" class="section">About Section Content</div>
+        <div id="section3" class="section">Services Section Content</div>
+        <div id="section4" class="section">Contact Section Content</div>
+    </div>
+</body>
+</html>
